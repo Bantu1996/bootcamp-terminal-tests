@@ -9,15 +9,11 @@ describe("The countRegNumber function ", function(regList) {
       assert.equal(1, countRegNumber("CY 123-223"));
     });
     
-    // it("should return 2 - but the parameter needs work'", function(regList) {
-    //   var EXPECTED_COUNT = 1;
-
-    //   assert.deepEqual(EXPECTED_COUNT, countRegNumber("CY 123, CA 123-123"));
-    // });
+    it("should return 2 for 'CY 123-223' and 'CY 523-243'", function() {
+      assert.equal(2, countRegNumber("CY 123-223, CY 523-243"));
+    });
     
-    // it("should return 5 - but the parameter needs work'", function(regList) {
-    //   var EXPECTED_COUNT = 5;
-      
-    //   assert.deepEqual(EXPECTED_COUNT, countRegNumber("CY 123-123", "CA 124-123", "CY 124-123", "CA 125-123", "CY 125-123", "CA 123-123"));
-    // });
+    it("should return 3 for 'CY 123-223', 'CY 523-243' and 'CY 623-743'", function() {
+      assert.equal(3, countRegNumber("CY 123-223, CY 523-243, CY 623-743"));
+    });
 });
