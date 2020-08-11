@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Bantu1996/bootcamp-terminal-tests/issues"
   },
-  "homepage": "https://github.com/Bantu1996/bootcamp-terminal-tests#readme"
+  "homepage": "https://github.com/Bantu1996/bootcamp-terminal-tests#readme",
+  "devDependencies": {
+    "mocha": "^8.1.1"
+  }
 }
